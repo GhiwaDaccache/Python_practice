@@ -1,1 +1,26 @@
-#another test
+############
+# Exercice 1
+############
+
+# Complete the method/function so that it converts dash/underscore delimited words into camel casing. 
+# The first word within the output should be capitalized only if the original word was capitalized.
+# The next words should be always capitalized.
+# Examples #
+
+# "the-stealth-Warrior" gets converted to "theStealthWarrior"
+# "The_Stealth_Warrior" gets converted to "TheStealthWarrior"
+
+
+def to_camel_case(text):
+    new_text = text.replace("-","_").split("_")
+    result = [new_text[0]]
+    
+    for word in new_text[1:]:
+        result.append(word[0].upper()+word[1:])
+        
+    return "".join(result)
+
+############
+# Exercice 2
+############
+
