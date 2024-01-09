@@ -24,3 +24,12 @@ def to_camel_case(text):
 # Exercice 2
 ############
 
+def disemvowel(string_):
+    vowels = "aeiouAEIOU"
+    new_string = []
+    for letter in string_:
+        if letter not in vowels:
+            new_string.append(letter)
+    string_ = "".join(new_string)
+
+    return string_
