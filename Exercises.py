@@ -24,6 +24,9 @@ def to_camel_case(text):
 # Exercice 2
 ############
 
+# Your task is to write a function that takes a string and return a new string with all vowels removed.
+# For example, the string "This website is for losers LOL!" would become "Ths wbst s fr lsrs LL!".
+
 def disemvowel(string_):
     vowels = "aeiouAEIOU"
     new_string = []
@@ -31,5 +34,5 @@ def disemvowel(string_):
         if letter not in vowels:
             new_string.append(letter)
     string_ = "".join(new_string)
-
     return string_
+
